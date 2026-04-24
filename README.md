@@ -69,8 +69,8 @@ src/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<usuario>/sgv-frontend.git
-cd sgv-frontend
+git clone https://github.com/isairey/SisVet-FrontEnd.git
+cd SisVet-FrontEnd
 ```
 
 ### 2. Instalar dependencias
@@ -167,7 +167,7 @@ En futuras iteraciones se incluirá:
 
 ---
 
-© 2025 — Sistema de Gestión Veterinaria (SGV)
+© 2026 — Sistema de Gestión Veterinaria (SGV)
 Frontend desarrollado con React + Vite
 Arquitectura limpia, modular y escalable.
 
