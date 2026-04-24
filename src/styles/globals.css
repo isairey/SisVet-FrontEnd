@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  background-color: var(--color-base);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Mejoras tipográficas globales */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+}
+
+p {
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+small, .text-small {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+/* Estilos mejorados para cards */
+.card-component {
+  font-family: var(--font-sans);
+}
+
+/* Mejoras en la legibilidad del texto */
+.text-muted {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.text-uppercase {
+  letter-spacing: var(--letter-spacing-wider);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Cards sin bordes - Solo sombras sutiles */
+.card-component {
+  border: none !important;
+}
+
+/* ============================================
+   CLASES DE UTILIDAD PARA COLORES DE TEXTO
+   ============================================ */
+.text-primary {
+  color: var(--color-text-primary) !important;
+}
+
+.text-secondary {
+  color: var(--color-text-secondary) !important;
+}
+
+.text-tertiary {
+  color: var(--color-text-tertiary) !important;
+}
+
+.text-muted {
+  color: var(--color-text-muted) !important;
+}
+
+.text-subtle {
+  color: var(--color-text-subtle) !important;
+}
+
+.text-heading {
+  color: var(--color-text-heading) !important;
+}
+
+/* Clases de utilidad para reemplazar text-white/XX */
+.text-label {
+  color: var(--color-text-subtle);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+}
+
+.text-description {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+.text-body {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+.dashboard-shell {
+  background: var(--color-base);
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.dashboard-main {
+  position: relative;
+  min-width: 0;
+  width: 100%;
+}
+
+.dashboard-sidebar {
+  position: fixed !important;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  .dashboard-sidebar {
+    position: fixed !important;
+  }
+}
+
+.dashboard-content {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.15) transparent;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.dashboard-content::-webkit-scrollbar {
+  width: 8px;
+}
+.dashboard-content::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 92, 246, 0.2);
+  border-radius: 999px;
+}
+.dashboard-content::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(139, 92, 246, 0.3);
+}
+
+.dashboard-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.dashboard-sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 92, 246, 0.15);
+  border-radius: 999px;
+}
+.dashboard-sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(139, 92, 246, 0.25);
+}
+
+.layout-auth {
+  background: var(--color-base);
+}
+
